@@ -7,7 +7,7 @@ export default function Header() {
         <header className={styles.header}>
             <div className={styles.header__wrapper}>
                 <h1 className={styles.header__title}>
-                    <strong>Hi, my name is <em>Yuri</em></strong><br/>
+                    <strong>Hi, my name is <em>Pavel</em></strong><br/>
                     a frontend developer
                 </h1>
                 <div className={styles.header__text}>

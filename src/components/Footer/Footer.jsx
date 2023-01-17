@@ -21,7 +21,7 @@ export default function Footer() {
                     <li className={styles.social__item}><a href="#!"><img src={linkedin} alt="Link"/></a></li>
                 </ul>
                 <div className={styles.copyright}>
-                    <p>All Rights Reserved 2023 | @freecode</p>
+                    <p>All Rights Reserved 2023 | <a href="https://t.me/freecode_22">@freecode</a></p>
                 </div>
             </div>
         </div>

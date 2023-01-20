@@ -18,6 +18,7 @@ export default function Projects() {
                         title={project.title}
                         img={project.img}
                         skills={project.skills}
+                        index={index}
                         />;
                       })
               }

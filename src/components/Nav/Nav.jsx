@@ -1,9 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import DarkModeBtn from '../DarkModeBtn/DarkModeBtn';
 import styles from './Nav.module.css'
 
-import sun from "../../img/icons/sun.svg";
-import moon from "../../img/icons/moon.svg";
+
 
 export default function Nav() {
 
@@ -17,18 +17,12 @@ export default function Nav() {
                   <NavLink to="/" className={styles.logo}>
                     <strong>Freelancer</strong> portfolio
                   </NavLink>
-                   
-
-                    <button className={styles.darkModeBtn}>
-                        <img src={moon} alt="Light mode" className={styles.darkModeBtn__icon}/>
-                        <img src={sun} alt="Dark mode" className={styles.darkModeBtn__icon}/>
-                    </button>
-
                     <ul className={styles.navList}>
                       <NavLink to="/" className={({isActive}) => isActive ? activeLink : normalLink}>Home</NavLink>
                       <NavLink to="/projects" className={({isActive}) => isActive ? activeLink : normalLink}>Projects</NavLink>
                       <NavLink to="/contacts" className={({isActive}) => isActive ? activeLink : normalLink}>Contacts</NavLink>   
                     </ul>
+                  <DarkModeBtn />
                 </div>
             </div>
         </nav>
